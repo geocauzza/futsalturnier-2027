@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Futsalturnier Ilanz 2027 · Sport Klub 42</title>
+  <meta name="description" content="Futsalturnier in Ilanz am 13. Februar 2027. Jetzt Team anmelden!">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  ============================================================
+  SO BEARBEITEST DU DIESE SEITE
+  - Alles in [eckigen Klammern] ist ein Platzhalter: ersetzen.
+  - Stellen mit "✏️ ÄNDERN" sind die wichtigsten.
+  - Speichern, auf GitHub hochladen → nach ca. 1 Minute online.
+  ============================================================
+-->
+
+<!-- ===================== START ===================== -->
+<header class="hero">
+  <img src="logo.svg" alt="Sport Klub 42" class="hero-logo">
+  <p class="kicker">Sport Klub 42 präsentiert</p>
+  <h1>Futsalturnier<br>Ilanz</h1>
+  <!-- ✏️ ÄNDERN: Datum und Ort -->
+  <p class="hero-date">Samstag, 13. Februar 2027 · [Sporthalle], Ilanz</p>
+  <a href="#anmeldung" class="button">Team anmelden</a>
+</header>
+
+<main>
+
+<!-- ===================== TURNIER-INFOS ===================== -->
+<section id="infos">
+  <h2>Das Turnier</h2>
+  <!-- ✏️ ÄNDERN: Infos anpassen. Eine Zeile = ein <div>…</div> -->
+  <dl class="facts">
+    <div><dt>Datum</dt><dd>Samstag, 13. Februar 2027</dd></div>
+    <div><dt>Zeit</dt><dd>[09:00] – [18:00] Uhr</dd></div>
+    <div><dt>Ort</dt><dd>[Sporthalle, Strasse Nr.], [PLZ] Ilanz</dd></div>
+    <div><dt>Startgeld</dt><dd>CHF 30.– pro Team</dd></div>
+    <div><dt>Teams</dt><dd>Max. [20] Teams</dd></div>
+    <div><dt>Spieler</dt><dd>[4] Feldspieler + Torhüter, max. [8] pro Team</dd></div>
+    <div><dt>Modus</dt><dd>[Gruppenphase, danach K.o.-Runde]</dd></div>
+    <div><dt>Anmeldeschluss</dt><dd>[31. Januar 2027]</dd></div>
+  </dl>
+  <!-- ✏️ ÄNDERN: Weitere Infos (Preise, Festwirtschaft, Regeln …) -->
+  <p>[Hier kommen weitere Infos hin, z. B. Preise für die Gewinner, Festwirtschaft, Hallenschuhe obligatorisch, Regeln.]</p>
+</section>
+
+<!-- ===================== ANMELDUNG ===================== -->
+<section id="anmeldung">
+  <h2>Anmeldung</h2>
+  <ol class="steps">
+    <li><strong>Formular ausfüllen</strong> mit Teamname und Kontaktperson.</li>
+    <li><strong>CHF 30.– bezahlen</strong> per TWINT oder Überweisung, mit dem Teamnamen als Mitteilung.</li>
+    <li><strong>Fertig!</strong> Sobald die Zahlung eingegangen ist, ist euer Platz fix. Wir melden uns per E-Mail.</li>
+  </ol>
+
+  <!-- ✏️ ÄNDERN: Link zu deinem Google Formular (2× unten).
+       Google Forms → Senden → Symbol <> → den Link aus src="…" kopieren. -->
+  <div class="form-wrap">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemf6gyw5c2agx_GuWiJ-W3IJJ6KyXU89ZQ1VP37ujWk7Qgcg/viewform?usp=header"
+            title="Anmeldeformular" loading="lazy">Wird geladen…</iframe>
+  </div>
+  <p class="small">Formular wird nicht angezeigt?
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSemf6gyw5c2agx_GuWiJ-W3IJJ6KyXU89ZQ1VP37ujWk7Qgcg/viewform" target="_blank" rel="noopener">Hier direkt öffnen</a>.</p>
+</section>
+
+<!-- ===================== BEZAHLEN ===================== -->
+<section id="bezahlen">
+  <h2>Bezahlen</h2>
+  <p>Startgeld: <strong>CHF 30.– pro Team</strong>. Bitte gebt bei der Zahlung euren <strong>Teamnamen</strong> als Mitteilung an, sonst können wir sie nicht zuordnen.</p>
+
+  <div class="pay">
+    <div class="pay-box">
+      <h3>TWINT</h3>
+      <!-- ✏️ ÄNDERN: Dein QR-Code als Bild "twint-qr.png" in den Ordner legen (alte Datei ersetzen) -->
+      <img src="twint-qr.png" alt="TWINT QR-Code" class="qr">
+      <p class="small">QR-Code in der TWINT-App scannen, CHF 30.– eingeben und euren Teamnamen als Mitteilung schreiben.</p>
+    </div>
+
+    <div class="pay-box">
+      <h3>Überweisung</h3>
+      <!-- ✏️ ÄNDERN: Bankangaben -->
+      <dl class="bank">
+        <dt>Empfänger</dt><dd>Sport Klub 42, [PLZ Ort]</dd>
+        <dt>IBAN</dt><dd class="mono">[CH00 0000 0000 0000 0000 0]</dd>
+        <dt>Bank</dt><dd>[Name der Bank]</dd>
+        <dt>Betrag</dt><dd>CHF 30.00</dd>
+        <dt>Mitteilung</dt><dd>Futsal + Teamname</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ÜBER UNS ===================== -->
+<section id="ueber-uns">
+  <h2>Wer sind wir?</h2>
+  <p>Wir sind eine Handvoll junger Leute aus Graubünden, die Sport lieben und Events dafür auf die Beine stellen wollen. Der Sport Klub 42 ist ein Verein als Plattform für Sportevents in der Region und darüber hinaus.</p>
+  <p>Wir wollen Bewegung fördern, Events für alle bieten und aus Mitmachenden und Zuschauenden eine Sportcommunity aufbauen. Egal ob Hobby oder Ehrgeiz, bei uns ist jede und jeder willkommen.</p>
+</section>
+
+</main>
+
+<!-- ===================== FUSSZEILE ===================== -->
+<footer>
+  <p class="tagline">Sportevents <span>für</span> Sportfans</p>
+  <!-- ✏️ ÄNDERN: Kontakt -->
+  <p>Fragen? <a href="mailto:[info@deine-adresse.ch]">[info@deine-adresse.ch]</a> · <a href="https://instagram.com/[dein-account]" target="_blank" rel="noopener">Instagram</a></p>
+  <p class="small">Datenschutz: Die Angaben aus der Anmeldung verwenden wir nur für die Organisation des Turniers und geben sie nicht weiter. Nach dem Turnier werden sie gelöscht.</p>
+  <p class="small">© 2027 Sport Klub 42</p>
+</footer>
+
+</body>
+</html>

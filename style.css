@@ -1,0 +1,117 @@
+/* Farben – hier kannst du sie zentral ändern */
+:root {
+  --rot: #E30613;
+  --schwarz: #0b0b0b;
+  --grau: #1a1a1a;
+  --weiss: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--schwarz);
+  color: var(--weiss);
+  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+a { color: var(--rot); }
+
+h1, h2, h3 {
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 1rem;
+}
+
+/* ---------- Start ---------- */
+.hero {
+  min-height: min(100vh, 820px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: radial-gradient(circle at 50% 35%, #2a2a2a 0%, var(--schwarz) 70%);
+}
+.hero-logo { width: min(320px, 70vw); margin-bottom: 2.5rem; }
+.kicker { text-transform: uppercase; letter-spacing: .2em; font-weight: 300; margin: 0 0 .5rem; color: #bbb; }
+.hero h1 { font-size: clamp(2.5rem, 10vw, 7rem); overflow-wrap: anywhere; }
+.hero-date { font-size: 1.5rem; margin: 0 0 2rem; }
+
+.button {
+  display: inline-block;
+  background: var(--rot);
+  color: var(--weiss);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: .05em;
+  padding: .8rem 2.2rem;
+  border-radius: 999px;
+}
+.button:hover { background: #c00510; }
+
+/* ---------- Abschnitte ---------- */
+section {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
+  border-top: 1px solid #222;
+}
+section h2 { font-size: clamp(2.5rem, 7vw, 3.75rem); color: var(--rot); }
+
+.facts { margin: 0 0 1.5rem; }
+.facts div {
+  display: grid;
+  grid-template-columns: 12.5rem 1fr;
+  gap: 1rem;
+  padding: .7rem 0;
+  border-bottom: 1px solid #222;
+}
+.facts dt { text-transform: uppercase; font-weight: 700; color: #999; }
+.facts dd { margin: 0; }
+
+.steps { padding-left: 1.4rem; margin: 0 0 2rem; }
+.steps li { margin-bottom: .6rem; }
+.steps li::marker { color: var(--rot); font-weight: 800; }
+
+.form-wrap {
+  background: var(--weiss);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.form-wrap iframe { display: block; width: 100%; height: 1100px; border: 0; }
+
+.pay { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+.pay-box { background: var(--grau); border-radius: 12px; padding: 1.75rem; }
+.pay-box h3 { font-size: 1.8rem; }
+.qr { width: 100%; max-width: 260px; display: block; background: var(--weiss); border-radius: 8px; padding: 8px; }
+.bank { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .4rem 1rem; }
+.bank dt { color: #999; text-transform: uppercase; font-weight: 700; }
+.bank dd { margin: 0; }
+.mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 1.05rem; word-break: break-all; }
+
+.small { font-size: 1rem; color: #aaa; }
+
+/* ---------- Fusszeile ---------- */
+footer {
+  background: var(--rot);
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+}
+footer a { color: var(--weiss); }
+footer .small { color: #ffd6d8; max-width: 620px; margin-left: auto; margin-right: auto; }
+.tagline { font-size: 2.25rem; font-weight: 800; text-transform: uppercase; margin: 0 0 1rem; }
+.tagline span { font-weight: 300; }
+
+/* ---------- Handy ---------- */
+@media (max-width: 640px) {
+  .facts div { grid-template-columns: 1fr; gap: 0; }
+  .pay { grid-template-columns: 1fr; }
+}
